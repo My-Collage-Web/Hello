@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, pink, blue);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .sign-up {
+      background: linear-gradient(to right bottom, lightpink, lightblue);
+      border: none;
+      width: 100%;
+      max-width: 370px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+      border-radius: 12px;
+      box-shadow: 10px 10px 25px lightblue, -10px -10px 25px blue;
+      animation: shadow 1s linear infinite;
+    }
+
+    @keyframes shadow {
+      0% {
+        box-shadow: 10px 10px 25px lightblue, -10px -10px 25px blue;
+      }
+      25% {
+        box-shadow: 10px -10px 30px lightblue, -10px 10px 30px blue;
+      }
+      50% {
+        box-shadow: -10px -10px 35px lightblue, 10px 10px 35px blue;
+      }
+      75% {
+        box-shadow: -10px 10px 30px lightblue, 10px -10px 30px blue;
+      }
+      100% {
+        box-shadow: 10px 10px 25px lightblue, -10px -10px 25px blue;
+      }
+    }
+
+    .sign-up h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .input {
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    .sign-up input {
+      width: 100%;
+      height: 45px;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      margin: 10px 0;
+      padding-left: 12px;
+      font-size: 16px;
+    }
+
+    .sign-up input::placeholder {
+      font-size: 15px;
+    }
+
+    .btn {
+      width: 100%;
+      height: 45px;
+      font-size: 16px;
+      color: white;
+      background-color: blue;
+      border-radius: 12px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .sign-up p {
+      margin-top: 15px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    @media (max-height: 600px) {
+      body {
+        align-items: flex-start;
+        padding-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sign-up">
+    <h1>Sign Up</h1>
+    <div class="input">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <input type="password" placeholder="Password" required />
+      <input type="password" placeholder="Confirm Password" required />
+    </div>
+    <button class="btn">Sign Up</button>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+</body>
+</html>

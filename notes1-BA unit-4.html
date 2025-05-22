@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Analytics Unit 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            width: 100%;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            flex-direction: column;
+        }
+
+        .first-heading {
+            font-size: 27px;
+            font-weight: 600;
+            color: white;
+            font-family: sans-serif;
+            margin: 60px 0px 20px 0px;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 30px 20px;
+            max-width: 1000px;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2575fc;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .small-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        /* Converted row to column layout */
+        .row {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .subject-box {
+            /* border: 2px solid black; */
+            background-color: #e6e2e2; /*use gpt recomend #f7f7f7*/
+            padding: 20px;
+            text-align: center;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            color: #0077cc;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 100%;
+            max-width: 600px;
+            margin: 4px;
+        }
+
+        .subject-box a {
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            color: black;
+            /* color: #0077cc; */
+            display: block;
+        }
+
+        .subject-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            background-color: #e3f2fd;
+            text-decoration: underline;
+            color: black;
+            border: 2px solid black;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p class="first-heading">Download here</p>
+    <div class="container">
+        <h1>Business Analytics (Unit-4)</h1>
+        <div class="small-container">
+            <div class="row">
+                <div class="subject-box">
+                    <a href="https://drive.google.com/file/d/1rqauWaLwhmqCk4p6NRk54l8xIC6crgDu/view?usp=drive_link">Descriptive Analytics-Measures of Central Tendency</a>
+                </div>
+                <div class="subject-box">
+                    <a href="https://drive.google.com/file/d/10UEzemri3hByI2umBGatwip5fiDfohQj/view?usp=drive_link">Descriptive Analytics-Measures of Dispersion</a>
+                </div>
+                <div class="subject-box">
+                    <a href="https://drive.google.com/file/d/1ggqhkMjRor2MSyJYSxsub5rxN8igrEuq/view?usp=drive_link">Predictive Analytics</a>
+                </div>
+                <div class="subject-box">
+                    <a href="https://drive.google.com/file/d/1WVasLNDtQBus_ovr0wLuS8Sy5kgZ5BRY/view?usp=drive_link">Prescriptive Analytics</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
